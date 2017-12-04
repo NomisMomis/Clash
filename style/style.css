@@ -1,32 +1,89 @@
+#main{
+    width: 100%;
+
+}
+#topblock{
+    width: 20%;
+    background-color: green;
+    Height:100%;
+    
+}
+#account{
+    padding-top: 50px;
+    margin-left: 20px;
+    
+}
+#container{
+    width: 100%;
+}
 #header{
-    float: right;
+    
+    width:100%;
+    height:10%;
+    position:relative;
+    top:40px;
+    text-align:center;
 }
 #wrapper{
-    height:1000px;
+    height: 80%;
     width: 80%;
-    background-color: blue;
-    margin: 0 auto;
+    background-color: #99ccff;
+   margin: 0 auto;
+}
+#headingtitle{
+    padding-left: 10%;
+
 }
 #mySidenav{
-    float:left;
+    color:  #d9d9d9;
 }
-#homebtn{
-    width: 25%;
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
-#boardbtn{
-    width: 25%;
+#box2{
+    width: 100%;
+    background-color:red;
 }
-#chatbtn{
-    width: 25%;
+li {
+    float: left;
 }
-#shopbtn{
-    width: 25%;
-    
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
 }
 nav{
     width: 100%;
 }
 .boardbox{
+    height: 200px;
+    width: 200px;
+    background-color:   #ff6666;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    position: relative;
+}
+.boardbox span{
+    position: absolute;
+    bottom:0;
+    
+    margin: 0 auto;
+    
+}
+.shopcategory{
     height: 200px;
     width: 200px;
     background-color:  red;

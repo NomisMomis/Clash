@@ -1,3 +1,4 @@
+<!-- @reference https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black --> 
 <!DOCTYPE html>
 <html>
     <head>
@@ -24,7 +25,7 @@
                     $("homepage.html").hide();
                 });
                  $("#shopbtn").click(function(){
-                    $("#box").load("shop.html");
+                    $("#box").load("shop.php");
                     $("homepage.html").hide();
                 });
                  $("#homebtn").click(function(){
@@ -35,41 +36,74 @@
         </script>
     </head>
     <body>
-        <!-- temporary usage of bootstrap over the web --> 
-        <div id="mySidenav" class="sidenav">
+        <!-- @reference https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black --> 
+        <span id="account" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Username</span>
+        <div id="container">
+             
+         <div id="header">
+            
+             <h1>Clash</h1></div>
+             </div>
+             <br>
+             <br>
+        <div id="topblock">
+            <div id="mySidenav" class="sidenav">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        </div>
-        <div id = "main">
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-        <div id="header"><h1>Clash</h1></div>
-        <p>text</p>
+              <img src="images/profinew.jpg" alt="profile picture">
+              <h2>Username</h2>
+              
+              <br>
+              <p class="profitext">Points: </p>
+              <br>
+              <h2 class="profitext">Topics</h2>
+              
+             
+              <h2 class="profitext">Likes</h2>
+              
+                <ul>
+                  <li>Dogs</li>
+                  <br>
+                  <li>Football</li>
+                  <br>
+                  <li>Coffee</li>
+                  
+                </ul>  
+
+              <br>
+              <h2 class="profitext">Dislikes</h2>
+              <ul>
+                  <li>Cats</li>
+                    <br>
+                  <li>Tea</li>
+                    <br>
+                  <li>Rugby</li>
+            </ul>  
+
+            </div>
+           </div>
         <div id="wrapper">
             <div id="navContainer">
-            <nav>
-                <a onclick = "home" type="button" id="homebtn" class="btn btn-primary">Home</a>
-                <a onclick = "boards" type="button" id="boardbtn" class="btn btn-primary">Boards</a>
-                <a onclick = "singlechat" type="button" id="chatbtn" class="btn btn-primary">One-to-One</a>
-                <a onclick = "shop" type="button" id="shopbtn" class="btn btn-primary">Shop</a>
-            </nav>
+            <ul>
+                  <li><a  id="homebtn" class="active" >Home</a></li>
+                  <li><a id="boardbtn" href="#boards">Boards</a></li>
+                  <li><a id="chatbtn" href="#onetoone">One-to-one</a></li>
+                  <li><a id="shopbtn" href="#shop">Shop</a></li>
+            </ul>
             </div>
-            <p>where all the shit is in </p>
             <div id="box">
-                
             </div>
-        </div>
         </div>
     </body>
-       <!-- temporary usage of bootstrap over the web --> 
+       <!-- @referenc --> 
     <script>
-
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+    
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
+  
 }
 </script>
 </html>

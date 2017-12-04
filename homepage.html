@@ -3,6 +3,68 @@
         <link rel="stylesheet" href="style/style.css" type="text/css" />
     </head>
     <body>
-        
+        <a data-toggle="modal" data-target="#myModal2">
+            <div class="boardbox">
+                <span><h2> news</h2></span>
+            </div>
+        </a>
+        <a data-toggle="modal" data-target="#myModal">
+            <div class="boardbox">
+                <span><h2>voting</h2></span>
+            </div>
+        </a>
+        <a data-toggle="modal" data-target="#myModal2">
+             <div class="boardbox">
+                <span> <h2>news</h2></span>
+            </div>
+        </a>
+        <!-- @reference https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_modal&stacked=h-->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Vote for topic</h4>
+        </div>
+        <div class="modal-body">
+         <form action="">
+          <input type="radio" name="gender" value="Pidgens"> Pidgens<br>
+          <input type="radio" name="gender" value="Penguins"> Penguins<br>
+          <input type="radio" name="gender" value="Doves"> Doves
+        </form>
+        </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+      </div>
+    </div>
+  </div>
+  
+    <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">News for Today!!!</h4>
+        </div>
+        <div class="modal-body">
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <button id"somebutton"><a href="verses.html">click me</a></button>
+  <script type="text/javascript" >
+      
+      
+  </script>
     </body>
 </html>
